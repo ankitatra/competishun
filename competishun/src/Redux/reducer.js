@@ -29,9 +29,23 @@ const watchlist = (state = [], action) => {
       return state;
   }
 };
+const initialState = {
+  recipes: [],
+};
+
+const recipes = (state = [], action) => {
+  console.log(action.type,"paylod")
+  switch (action.type) {
+    case 'SET_RECIPES':
+      return { ...state, recipes: action.payload };
+    default:
+      return state;
+  }
+};
 
 export default combineReducers({
   movies,
   favorites,
   watchlist,
+  recipes
 });

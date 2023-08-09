@@ -1,22 +1,3 @@
-// import React from 'react';
-// import { useSelector } from 'react-redux';
-// import MovieCard from './MovieCard';
-
-// const Favorites = () => {
-//   const favoriteMovies = useSelector(state => state.favorites);
-
-//   return (
-//     <div>
-//       <h2>Favorites</h2>
-//       {favoriteMovies.map((movie) => (
-//         <MovieCard key={movie.id} movie={movie} />
-//       ))}
-//     </div>
-//   );
-// };
-
-// export default Favorites;
-
 import React from 'react';
 import { useSelector } from 'react-redux';
 import MovieCard from './MovieCard';

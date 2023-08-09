@@ -1,32 +1,3 @@
-// import React, { useEffect } from 'react';
-// import { useSelector, useDispatch } from 'react-redux';
-// import { fetchMovies } from '../Redux/action';
-// import MovieCard from './MovieCard';
-// import { StickyNavbar } from './MovieHome';
-
-// const MovieList = () => {
-//   const movies = useSelector(state => state.movies);
-//   const dispatch = useDispatch();
-
-//   useEffect(() => {
-//     dispatch(fetchMovies());
-//   }, [dispatch]);
-
-//   return (
-   
-//     <div>
-//       <StickyNavbar/>
-//       <h2>Movies</h2>
-//       {movies.map((movie) => (
-//         <MovieCard key={movie.id} movie={movie} />
-//       ))}
-//     </div>
-//   );
-// };
-
-// export default MovieList;
-
-
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchMovies } from '../Redux/action';

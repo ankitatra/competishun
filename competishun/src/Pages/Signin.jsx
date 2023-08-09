@@ -1,38 +1,3 @@
-// import React, { useEffect } from "react";
-// import GoogleButton from "react-google-button";
-// import { UserAuth } from "../Context/AuthContext";
-// import { useNavigate } from "react-router-dom";
-// const Signin = () => {
-//   const {googleSignin,user}=UserAuth()
-//   const navigate=useNavigate()
-//   const handleGoogleSignIn=async()=>{
-//     try {
-//       await googleSignin()
-//       navigate("/movie")
-//     } catch (error) {
-//       console.log(error)
-//     }
-//   }
-
-//   useEffect(()=>{
-//       if(user!==null){
-//         navigate("/movie")
-//       }
-//   },[user])
-//   return (
-//     <div>
-//       <h1>Signin Page</h1>
-//       <GoogleButton
-//         onClick={handleGoogleSignIn}
-//       />
-//     </div>
-//   );
-// };
-
-
-// export default Signin;
-
-
 import React, { useEffect } from "react";
 import GoogleButton from "react-google-button";
 import { UserAuth } from "../Context/AuthContext";
@@ -46,7 +11,7 @@ const Signin = () => {
     try {
       await googleSignin();
      
-      navigate("/movie");
+      navigate(-1);
       
     } catch (error) {
       console.log(error);
@@ -55,7 +20,7 @@ const Signin = () => {
 
   useEffect(() => {
     if (user !== null) {
-      navigate("/movie");
+      navigate(-1);
     }
   }, [user]);
 

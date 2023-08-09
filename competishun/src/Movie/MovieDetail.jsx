@@ -1,36 +1,3 @@
-// import React from 'react';
-// import { useSelector } from 'react-redux'; // Import useSelector from react-redux
-// import { useParams } from 'react-router-dom';
-
-// const MovieDetail = () => {
-//   const { id } = useParams();
-//   console.log(id)
-
-//   const movies = useSelector(state => state.movies);
-//   console.log(movies)
-//   const movie=movies.filter((e,i)=>{
-//     return e.id==id
-//   })
-//   console.log(movie)
-//   // Handle case where movie is not found
-//   if (!movie) {
-//     return <div>Movie not found</div>;
-//   }
-
-//   return (
-//     <div>
-//      <img src={`https://image.tmdb.org/t/p/original/${movie[0].poster_path}`} alt={movie.name} />
-//       <h2>{movie[0].title}</h2>
-//       <p>Release Date: {movie[0].release_date}</p>
-//       <p>Genre: {movie[0].genre_ids[0]}</p>
-//       <p>{movie[0].overview}</p>
-//       {/* Display more movie details */}
-//     </div>
-//   );
-// };
-
-// export default MovieDetail;
-
 import React from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";

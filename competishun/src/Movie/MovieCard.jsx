@@ -1,36 +1,3 @@
-// import React from 'react';
-// import { useDispatch } from 'react-redux';
-// import { addToFavorites, addToWatchlist } from '../Redux/action';
-// import { Link } from 'react-router-dom';
-
-// const MovieCard = ({ movie }) => {
-//   const dispatch = useDispatch();
-
-//   const handleFavorite = () => {
-//     dispatch(addToFavorites(movie));
-//   };
-
-//   const handleWatchlist = () => {
-//     dispatch(addToWatchlist(movie));
-//   };
-
-//   return (
-//     <div className="movie-card">
-//       <Link to={`/movie/${movie.id}`}>
-//       <img src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt={movie.name} />
-//       </Link>
-     
-//       <h3>{movie.title}</h3>
-//       <p>{movie.genre_ids[0]}</p>
-//       <button onClick={handleFavorite}>Add to Favorites</button>
-//       <button onClick={handleWatchlist}>Add to Watchlist</button>
-//       {/* Link to MovieDetail component */}
-//     </div>
-//   );
-// };
-
-// export default MovieCard;
-
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { addToFavorites, addToWatchlist } from '../Redux/action';

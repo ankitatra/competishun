@@ -1,22 +1,3 @@
-// import React from 'react';
-// import { useSelector } from 'react-redux';
-// import MovieCard from './MovieCard';
-
-// const Watchlist = () => {
-//   const watchlistMovies = useSelector(state => state.watchlist);
-
-//   return (
-//     <div>
-//       <h2>Watchlist</h2>
-//       {watchlistMovies.map((movie) => (
-//         <MovieCard key={movie.id} movie={movie} />
-//       ))}
-//     </div>
-//   );
-// };
-
-// export default Watchlist;
-
 import React from 'react';
 import { useSelector } from 'react-redux';
 import MovieCard from './MovieCard';

@@ -38,7 +38,7 @@ export function StickyNavbar() {
         className="p-1 font-normal"
       >
         <Link to={"/movie"} className="flex items-center">
-          Movies
+          Recepi
         </Link>
       </Typography>
       <Typography
@@ -47,8 +47,8 @@ export function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <Link to={"/favourits"} className="flex items-center">
-          Favourites
+        <Link to={"/calorie"} className="flex items-center">
+        Calorie
         </Link>
       </Typography>
       <Typography
@@ -57,8 +57,8 @@ export function StickyNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <Link to={"/watchlist"} className="flex items-center">
-          Watchlist
+        <Link to={"/diet"} className="flex items-center">
+          Diet
         </Link>
       </Typography>
     </ul>
